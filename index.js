@@ -56,6 +56,10 @@ export default class Toast extends Component {
             if(duration !== DURATION.FOREVER) this.close();
         });
     }
+	
+	showTest(){
+		console.log('这是修改测试')
+	}
 
     close( duration ) {
         let delay = typeof duration === 'undefined' ? this.duration : duration;
